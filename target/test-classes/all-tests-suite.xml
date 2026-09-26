@@ -2,7 +2,7 @@
 <suite name="HerokuApp Full Test Suite" verbose="1">
     <test name="All 9 Functionalities">
         <classes>
-            <class name="TheInternetHerokuTest" />
+            <class name="tests.TheInternetHerokuTest" />
         </classes>
     </test>
 </suite>

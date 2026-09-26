@@ -1,2 +1,5 @@
-/workspaces/qa-lab2/src/test/java/BaseTest.java
-/workspaces/qa-lab2/src/test/java/TheInternetHerokuTest.java
+/workspaces/qa-lab2/src/test/java/pages/LoginPage.java
+/workspaces/qa-lab2/src/test/java/pages/SignUpPage.java
+/workspaces/qa-lab2/src/test/java/tests/BaseTest.java
+/workspaces/qa-lab2/src/test/java/tests/ShareLaneTest.java
+/workspaces/qa-lab2/src/test/java/tests/TheInternetHerokuTest.java

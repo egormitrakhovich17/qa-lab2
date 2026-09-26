@@ -1,121 +1,181 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
+<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-09-26T19:07:37 UTC" name="HerokuApp Full Test Suite" finished-at="2026-09-26T19:08:20 UTC" duration-ms="43696">
+  <suite started-at="2026-09-26T19:50:31 UTC" name="ShareLane Full Suite" finished-at="2026-09-26T19:50:56 UTC" duration-ms="24917">
     <groups>
     </groups>
-    <test started-at="2026-09-26T19:07:37 UTC" name="All 9 Functionalities" finished-at="2026-09-26T19:08:20 UTC" duration-ms="43696">
-      <class name="TheInternetHerokuTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:TheInternetHerokuTest@79ad8b2f]" started-at="2026-09-26T19:07:37 UTC" name="setUp" finished-at="2026-09-26T19:07:38 UTC" duration-ms="1886" status="PASS">
+    <test started-at="2026-09-26T19:50:31 UTC" name="All 10 ShareLane Tests" finished-at="2026-09-26T19:50:56 UTC" duration-ms="24917">
+      <class name="tests.ShareLaneTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.ShareLaneTest@4fe767f3]" started-at="2026-09-26T19:50:31 UTC" name="setUp" finished-at="2026-09-26T19:50:33 UTC" duration-ms="2259" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testBasicAuth()[pri:0, instance:TheInternetHerokuTest@79ad8b2f]" started-at="2026-09-26T19:07:38 UTC" name="testBasicAuth" description="1. Проверка Basic Auth" finished-at="2026-09-26T19:07:40 UTC" duration-ms="1233" status="PASS">
+        <test-method signature="testAddToCart()[pri:0, instance:tests.ShareLaneTest@4fe767f3]" started-at="2026-09-26T19:50:33 UTC" name="testAddToCart" description="TC-10 [Позитивный]: Добавление товара в корзину и проверка отображения корзины" finished-at="2026-09-26T19:50:34 UTC" duration-ms="716" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testBasicAuth -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:TheInternetHerokuTest@79ad8b2f]" started-at="2026-09-26T19:07:40 UTC" name="tearDown" finished-at="2026-09-26T19:07:40 UTC" duration-ms="80" status="PASS">
+        </test-method> <!-- testAddToCart -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ShareLaneTest@4fe767f3]" started-at="2026-09-26T19:50:34 UTC" name="tearDown" finished-at="2026-09-26T19:50:34 UTC" duration-ms="112" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:TheInternetHerokuTest@79ad8b2f]" started-at="2026-09-26T19:07:40 UTC" name="setUp" finished-at="2026-09-26T19:07:40 UTC" duration-ms="686" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.ShareLaneTest@4fe767f3]" started-at="2026-09-26T19:50:34 UTC" name="setUp" finished-at="2026-09-26T19:50:35 UTC" duration-ms="992" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testDropdown()[pri:0, instance:TheInternetHerokuTest@79ad8b2f]" started-at="2026-09-26T19:07:40 UTC" name="testDropdown" description="2. Проверка выбора опции из Dropdown" finished-at="2026-09-26T19:07:42 UTC" duration-ms="1263" status="PASS">
+        <test-method signature="testInvalidZipCodesDDT(java.lang.String,java.lang.String)[pri:0, instance:tests.ShareLaneTest@4fe767f3]" started-at="2026-09-26T19:50:35 UTC" name="testInvalidZipCodesDDT" description="TC-02..05 [Негативные DDT]: Проверка невалидных форматов ZIP-кода" data-provider="invalidZipData" finished-at="2026-09-26T19:50:36 UTC" duration-ms="1196" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1234]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[TC-02: 4 цифры (меньше 5)]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testDropdown -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:TheInternetHerokuTest@79ad8b2f]" started-at="2026-09-26T19:07:42 UTC" name="tearDown" finished-at="2026-09-26T19:07:42 UTC" duration-ms="71" status="PASS">
+        </test-method> <!-- testInvalidZipCodesDDT -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ShareLaneTest@4fe767f3]" started-at="2026-09-26T19:50:36 UTC" name="tearDown" finished-at="2026-09-26T19:50:37 UTC" duration-ms="81" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:TheInternetHerokuTest@79ad8b2f]" started-at="2026-09-26T19:07:42 UTC" name="setUp" finished-at="2026-09-26T19:07:42 UTC" duration-ms="558" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.ShareLaneTest@4fe767f3]" started-at="2026-09-26T19:50:37 UTC" name="setUp" finished-at="2026-09-26T19:50:37 UTC" duration-ms="628" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testDynamicControls()[pri:0, instance:TheInternetHerokuTest@79ad8b2f]" started-at="2026-09-26T19:07:42 UTC" name="testDynamicControls" description="3. Проверка Dynamic Controls" finished-at="2026-09-26T19:07:55 UTC" duration-ms="12781" status="PASS">
+        <test-method signature="testInvalidZipCodesDDT(java.lang.String,java.lang.String)[pri:0, instance:tests.ShareLaneTest@4fe767f3]" started-at="2026-09-26T19:50:37 UTC" name="testInvalidZipCodesDDT" description="TC-02..05 [Негативные DDT]: Проверка невалидных форматов ZIP-кода" data-provider="invalidZipData" finished-at="2026-09-26T19:50:38 UTC" duration-ms="1242" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[123]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[TC-03: 3 цифры (меньше 5)]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testDynamicControls -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:TheInternetHerokuTest@79ad8b2f]" started-at="2026-09-26T19:07:55 UTC" name="tearDown" finished-at="2026-09-26T19:07:55 UTC" duration-ms="88" status="PASS">
+        </test-method> <!-- testInvalidZipCodesDDT -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ShareLaneTest@4fe767f3]" started-at="2026-09-26T19:50:38 UTC" name="tearDown" finished-at="2026-09-26T19:50:38 UTC" duration-ms="77" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:TheInternetHerokuTest@79ad8b2f]" started-at="2026-09-26T19:07:55 UTC" name="setUp" finished-at="2026-09-26T19:07:56 UTC" duration-ms="575" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.ShareLaneTest@4fe767f3]" started-at="2026-09-26T19:50:38 UTC" name="setUp" finished-at="2026-09-26T19:50:39 UTC" duration-ms="649" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testExitIntent()[pri:0, instance:TheInternetHerokuTest@79ad8b2f]" started-at="2026-09-26T19:07:56 UTC" name="testExitIntent" description="4. Проверка модального окна Exit Intent" finished-at="2026-09-26T19:07:57 UTC" duration-ms="1262" status="PASS">
+        <test-method signature="testInvalidZipCodesDDT(java.lang.String,java.lang.String)[pri:0, instance:tests.ShareLaneTest@4fe767f3]" started-at="2026-09-26T19:50:39 UTC" name="testInvalidZipCodesDDT" description="TC-02..05 [Негативные DDT]: Проверка невалидных форматов ZIP-кода" data-provider="invalidZipData" finished-at="2026-09-26T19:50:40 UTC" duration-ms="1098" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[abcde]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[TC-04: Буквы вместо цифр]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testExitIntent -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:TheInternetHerokuTest@79ad8b2f]" started-at="2026-09-26T19:07:57 UTC" name="tearDown" finished-at="2026-09-26T19:07:57 UTC" duration-ms="72" status="PASS">
+        </test-method> <!-- testInvalidZipCodesDDT -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ShareLaneTest@4fe767f3]" started-at="2026-09-26T19:50:40 UTC" name="tearDown" finished-at="2026-09-26T19:50:40 UTC" duration-ms="80" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:TheInternetHerokuTest@79ad8b2f]" started-at="2026-09-26T19:07:57 UTC" name="setUp" finished-at="2026-09-26T19:07:58 UTC" duration-ms="650" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.ShareLaneTest@4fe767f3]" started-at="2026-09-26T19:50:40 UTC" name="setUp" finished-at="2026-09-26T19:50:41 UTC" duration-ms="626" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testFormAuthentication()[pri:0, instance:TheInternetHerokuTest@79ad8b2f]" started-at="2026-09-26T19:07:58 UTC" name="testFormAuthentication" description="5. Проверка логина: негативный и позитивный сценарии" finished-at="2026-09-26T19:08:00 UTC" duration-ms="2671" status="PASS">
+        <test-method signature="testInvalidZipCodesDDT(java.lang.String,java.lang.String)[pri:0, instance:tests.ShareLaneTest@4fe767f3]" started-at="2026-09-26T19:50:41 UTC" name="testInvalidZipCodesDDT" description="TC-02..05 [Негативные DDT]: Проверка невалидных форматов ZIP-кода" data-provider="invalidZipData" finished-at="2026-09-26T19:50:42 UTC" duration-ms="998" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[TC-05: Пустое значение]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testFormAuthentication -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:TheInternetHerokuTest@79ad8b2f]" started-at="2026-09-26T19:08:00 UTC" name="tearDown" finished-at="2026-09-26T19:08:01 UTC" duration-ms="85" status="PASS">
+        </test-method> <!-- testInvalidZipCodesDDT -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ShareLaneTest@4fe767f3]" started-at="2026-09-26T19:50:42 UTC" name="tearDown" finished-at="2026-09-26T19:50:42 UTC" duration-ms="74" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:TheInternetHerokuTest@79ad8b2f]" started-at="2026-09-26T19:08:01 UTC" name="setUp" finished-at="2026-09-26T19:08:01 UTC" duration-ms="552" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.ShareLaneTest@4fe767f3]" started-at="2026-09-26T19:50:42 UTC" name="setUp" finished-at="2026-09-26T19:50:43 UTC" duration-ms="727" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testFrames()[pri:0, instance:TheInternetHerokuTest@79ad8b2f]" started-at="2026-09-26T19:08:01 UTC" name="testFrames" description="6. Проверка работы с iframe" finished-at="2026-09-26T19:08:13 UTC" duration-ms="11531" status="PASS">
+        <test-method signature="testLoginEmptyCredentials()[pri:0, instance:tests.ShareLaneTest@4fe767f3]" started-at="2026-09-26T19:50:43 UTC" name="testLoginEmptyCredentials" description="TC-07 [Негативный]: Вход с пустыми полями Email и Password" finished-at="2026-09-26T19:50:44 UTC" duration-ms="1162" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testFrames -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:TheInternetHerokuTest@79ad8b2f]" started-at="2026-09-26T19:08:13 UTC" name="tearDown" finished-at="2026-09-26T19:08:13 UTC" duration-ms="71" status="PASS">
+        </test-method> <!-- testLoginEmptyCredentials -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ShareLaneTest@4fe767f3]" started-at="2026-09-26T19:50:44 UTC" name="tearDown" finished-at="2026-09-26T19:50:44 UTC" duration-ms="72" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:TheInternetHerokuTest@79ad8b2f]" started-at="2026-09-26T19:08:13 UTC" name="setUp" finished-at="2026-09-26T19:08:13 UTC" duration-ms="580" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.ShareLaneTest@4fe767f3]" started-at="2026-09-26T19:50:44 UTC" name="setUp" finished-at="2026-09-26T19:50:45 UTC" duration-ms="604" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testJQueryMenu()[pri:0, instance:TheInternetHerokuTest@79ad8b2f]" started-at="2026-09-26T19:08:13 UTC" name="testJQueryMenu" description="7. Проверка меню JQuery UI с наведением курсора" finished-at="2026-09-26T19:08:16 UTC" duration-ms="2617" status="PASS">
+        <test-method signature="testLoginNonExistentUser()[pri:0, instance:tests.ShareLaneTest@4fe767f3]" started-at="2026-09-26T19:50:45 UTC" name="testLoginNonExistentUser" description="TC-06 [Негативный]: Вход с незарегистрированным пользователем" finished-at="2026-09-26T19:50:46 UTC" duration-ms="1138" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testJQueryMenu -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:TheInternetHerokuTest@79ad8b2f]" started-at="2026-09-26T19:08:16 UTC" name="tearDown" finished-at="2026-09-26T19:08:16 UTC" duration-ms="69" status="PASS">
+        </test-method> <!-- testLoginNonExistentUser -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ShareLaneTest@4fe767f3]" started-at="2026-09-26T19:50:46 UTC" name="tearDown" finished-at="2026-09-26T19:50:46 UTC" duration-ms="74" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:TheInternetHerokuTest@79ad8b2f]" started-at="2026-09-26T19:08:16 UTC" name="setUp" finished-at="2026-09-26T19:08:17 UTC" duration-ms="592" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.ShareLaneTest@4fe767f3]" started-at="2026-09-26T19:50:46 UTC" name="setUp" finished-at="2026-09-26T19:50:46 UTC" duration-ms="718" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testJavaScriptAlerts()[pri:0, instance:TheInternetHerokuTest@79ad8b2f]" started-at="2026-09-26T19:08:17 UTC" name="testJavaScriptAlerts" description="8. Проверка JavaScript Alerts" finished-at="2026-09-26T19:08:18 UTC" duration-ms="1417" status="PASS">
+        <test-method signature="testSearchBookPositive()[pri:0, instance:tests.ShareLaneTest@4fe767f3]" started-at="2026-09-26T19:50:46 UTC" name="testSearchBookPositive" description="TC-08 [Позитивный]: Поиск книги по ключевому слову" finished-at="2026-09-26T19:50:48 UTC" duration-ms="1141" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testJavaScriptAlerts -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:TheInternetHerokuTest@79ad8b2f]" started-at="2026-09-26T19:08:18 UTC" name="tearDown" finished-at="2026-09-26T19:08:18 UTC" duration-ms="71" status="PASS">
+        </test-method> <!-- testSearchBookPositive -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ShareLaneTest@4fe767f3]" started-at="2026-09-26T19:50:48 UTC" name="tearDown" finished-at="2026-09-26T19:50:48 UTC" duration-ms="78" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:TheInternetHerokuTest@79ad8b2f]" started-at="2026-09-26T19:08:18 UTC" name="setUp" finished-at="2026-09-26T19:08:19 UTC" duration-ms="696" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.ShareLaneTest@4fe767f3]" started-at="2026-09-26T19:50:48 UTC" name="setUp" finished-at="2026-09-26T19:50:48 UTC" duration-ms="594" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testMultipleWindows()[pri:0, instance:TheInternetHerokuTest@79ad8b2f]" started-at="2026-09-26T19:08:19 UTC" name="testMultipleWindows" description="9. Проверка открытия нового окна" finished-at="2026-09-26T19:08:20 UTC" duration-ms="1377" status="PASS">
+        <test-method signature="testSearchNonExistentBook()[pri:0, instance:tests.ShareLaneTest@4fe767f3]" started-at="2026-09-26T19:50:48 UTC" name="testSearchNonExistentBook" description="TC-09 [Негативный]: Поиск заведомо несуществующей книги" finished-at="2026-09-26T19:50:49 UTC" duration-ms="1120" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testMultipleWindows -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:TheInternetHerokuTest@79ad8b2f]" started-at="2026-09-26T19:08:20 UTC" name="tearDown" finished-at="2026-09-26T19:08:20 UTC" duration-ms="74" status="PASS">
+        </test-method> <!-- testSearchNonExistentBook -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ShareLaneTest@4fe767f3]" started-at="2026-09-26T19:50:49 UTC" name="tearDown" finished-at="2026-09-26T19:50:50 UTC" duration-ms="78" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- TheInternetHerokuTest -->
-    </test> <!-- All 9 Functionalities -->
-  </suite> <!-- HerokuApp Full Test Suite -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.ShareLaneTest@4fe767f3]" started-at="2026-09-26T19:50:50 UTC" name="setUp" finished-at="2026-09-26T19:50:50 UTC" duration-ms="517" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testValidZipCode()[pri:0, instance:tests.ShareLaneTest@4fe767f3]" started-at="2026-09-26T19:50:50 UTC" name="testValidZipCode" description="TC-01 [Позитивный]: Ввод корректного 5-значного ZIP-кода" finished-at="2026-09-26T19:50:56 UTC" duration-ms="5908" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testValidZipCode -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ShareLaneTest@4fe767f3]" started-at="2026-09-26T19:50:56 UTC" name="tearDown" finished-at="2026-09-26T19:50:56 UTC" duration-ms="74" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.ShareLaneTest -->
+    </test> <!-- All 10 ShareLane Tests -->
+  </suite> <!-- ShareLane Full Suite -->
 </testng-results>

@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="ShareLane SignUp Suite" verbose="1">
+    <test name="Sign Up Tests Only">
+        <classes>
+            <class name="tests.ShareLaneTest">
+                <methods>
+                    <include name="testValidZipCode" />
+                    <include name="testInvalidZipCodesDDT" />
+                    <include name="testSuccessfulRegistration" />
+                    <include name="testRegistrationEmptyEmail" />
+                    <include name="testRegistrationPasswordMismatch" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

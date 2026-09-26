@@ -2,7 +2,7 @@
 <suite name="Single Auth Test Suite" verbose="1">
     <test name="Authentication Only">
         <classes>
-            <class name="TheInternetHerokuTest">
+            <class name="tests.TheInternetHerokuTest">
                 <methods>
                     <include name="testFormAuthentication" />
                     <include name="testBasicAuth" />

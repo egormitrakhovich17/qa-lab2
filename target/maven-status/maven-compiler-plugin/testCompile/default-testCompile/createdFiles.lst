@@ -1,2 +1,5 @@
-TheInternetHerokuTest.class
-BaseTest.class
+pages/SignUpPage.class
+tests/BaseTest.class
+pages/LoginPage.class
+tests/TheInternetHerokuTest.class
+tests/ShareLaneTest.class

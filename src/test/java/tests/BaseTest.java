@@ -1,3 +1,5 @@
+package tests;
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -21,10 +23,8 @@ public abstract class BaseTest {
         File codespaceBrowser = new File("/home/codespace/.cache/ms-playwright/chromium-1243/chrome-linux64/chrome");
         if (codespaceBrowser.exists()) {
             options.setBinary(codespaceBrowser.getAbsolutePath());
-            // Фиксируем версию ChromeDriver под версию Playwright Chromium (153)
             WebDriverManager.chromedriver().browserVersion("153").setup();
         } else {
-            // Для локального запуска на обычном ПК товарища
             WebDriverManager.chromedriver().setup();
         }
 
