@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-09-26T19:07:37 UTC" name="HerokuApp Full Test Suite" finished-at="2026-09-26T19:08:20 UTC" duration-ms="43696">
+    <groups>
+    </groups>
+    <test started-at="2026-09-26T19:07:37 UTC" name="All 9 Functionalities" finished-at="2026-09-26T19:08:20 UTC" duration-ms="43696">
+      <class name="TheInternetHerokuTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:TheInternetHerokuTest@79ad8b2f]" started-at="2026-09-26T19:07:37 UTC" name="setUp" finished-at="2026-09-26T19:07:38 UTC" duration-ms="1886" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testBasicAuth()[pri:0, instance:TheInternetHerokuTest@79ad8b2f]" started-at="2026-09-26T19:07:38 UTC" name="testBasicAuth" description="1. Проверка Basic Auth" finished-at="2026-09-26T19:07:40 UTC" duration-ms="1233" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBasicAuth -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TheInternetHerokuTest@79ad8b2f]" started-at="2026-09-26T19:07:40 UTC" name="tearDown" finished-at="2026-09-26T19:07:40 UTC" duration-ms="80" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:TheInternetHerokuTest@79ad8b2f]" started-at="2026-09-26T19:07:40 UTC" name="setUp" finished-at="2026-09-26T19:07:40 UTC" duration-ms="686" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testDropdown()[pri:0, instance:TheInternetHerokuTest@79ad8b2f]" started-at="2026-09-26T19:07:40 UTC" name="testDropdown" description="2. Проверка выбора опции из Dropdown" finished-at="2026-09-26T19:07:42 UTC" duration-ms="1263" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDropdown -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TheInternetHerokuTest@79ad8b2f]" started-at="2026-09-26T19:07:42 UTC" name="tearDown" finished-at="2026-09-26T19:07:42 UTC" duration-ms="71" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:TheInternetHerokuTest@79ad8b2f]" started-at="2026-09-26T19:07:42 UTC" name="setUp" finished-at="2026-09-26T19:07:42 UTC" duration-ms="558" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testDynamicControls()[pri:0, instance:TheInternetHerokuTest@79ad8b2f]" started-at="2026-09-26T19:07:42 UTC" name="testDynamicControls" description="3. Проверка Dynamic Controls" finished-at="2026-09-26T19:07:55 UTC" duration-ms="12781" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDynamicControls -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TheInternetHerokuTest@79ad8b2f]" started-at="2026-09-26T19:07:55 UTC" name="tearDown" finished-at="2026-09-26T19:07:55 UTC" duration-ms="88" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:TheInternetHerokuTest@79ad8b2f]" started-at="2026-09-26T19:07:55 UTC" name="setUp" finished-at="2026-09-26T19:07:56 UTC" duration-ms="575" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testExitIntent()[pri:0, instance:TheInternetHerokuTest@79ad8b2f]" started-at="2026-09-26T19:07:56 UTC" name="testExitIntent" description="4. Проверка модального окна Exit Intent" finished-at="2026-09-26T19:07:57 UTC" duration-ms="1262" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testExitIntent -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TheInternetHerokuTest@79ad8b2f]" started-at="2026-09-26T19:07:57 UTC" name="tearDown" finished-at="2026-09-26T19:07:57 UTC" duration-ms="72" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:TheInternetHerokuTest@79ad8b2f]" started-at="2026-09-26T19:07:57 UTC" name="setUp" finished-at="2026-09-26T19:07:58 UTC" duration-ms="650" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testFormAuthentication()[pri:0, instance:TheInternetHerokuTest@79ad8b2f]" started-at="2026-09-26T19:07:58 UTC" name="testFormAuthentication" description="5. Проверка логина: негативный и позитивный сценарии" finished-at="2026-09-26T19:08:00 UTC" duration-ms="2671" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFormAuthentication -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TheInternetHerokuTest@79ad8b2f]" started-at="2026-09-26T19:08:00 UTC" name="tearDown" finished-at="2026-09-26T19:08:01 UTC" duration-ms="85" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:TheInternetHerokuTest@79ad8b2f]" started-at="2026-09-26T19:08:01 UTC" name="setUp" finished-at="2026-09-26T19:08:01 UTC" duration-ms="552" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testFrames()[pri:0, instance:TheInternetHerokuTest@79ad8b2f]" started-at="2026-09-26T19:08:01 UTC" name="testFrames" description="6. Проверка работы с iframe" finished-at="2026-09-26T19:08:13 UTC" duration-ms="11531" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFrames -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TheInternetHerokuTest@79ad8b2f]" started-at="2026-09-26T19:08:13 UTC" name="tearDown" finished-at="2026-09-26T19:08:13 UTC" duration-ms="71" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:TheInternetHerokuTest@79ad8b2f]" started-at="2026-09-26T19:08:13 UTC" name="setUp" finished-at="2026-09-26T19:08:13 UTC" duration-ms="580" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testJQueryMenu()[pri:0, instance:TheInternetHerokuTest@79ad8b2f]" started-at="2026-09-26T19:08:13 UTC" name="testJQueryMenu" description="7. Проверка меню JQuery UI с наведением курсора" finished-at="2026-09-26T19:08:16 UTC" duration-ms="2617" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testJQueryMenu -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TheInternetHerokuTest@79ad8b2f]" started-at="2026-09-26T19:08:16 UTC" name="tearDown" finished-at="2026-09-26T19:08:16 UTC" duration-ms="69" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:TheInternetHerokuTest@79ad8b2f]" started-at="2026-09-26T19:08:16 UTC" name="setUp" finished-at="2026-09-26T19:08:17 UTC" duration-ms="592" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testJavaScriptAlerts()[pri:0, instance:TheInternetHerokuTest@79ad8b2f]" started-at="2026-09-26T19:08:17 UTC" name="testJavaScriptAlerts" description="8. Проверка JavaScript Alerts" finished-at="2026-09-26T19:08:18 UTC" duration-ms="1417" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testJavaScriptAlerts -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TheInternetHerokuTest@79ad8b2f]" started-at="2026-09-26T19:08:18 UTC" name="tearDown" finished-at="2026-09-26T19:08:18 UTC" duration-ms="71" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:TheInternetHerokuTest@79ad8b2f]" started-at="2026-09-26T19:08:18 UTC" name="setUp" finished-at="2026-09-26T19:08:19 UTC" duration-ms="696" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testMultipleWindows()[pri:0, instance:TheInternetHerokuTest@79ad8b2f]" started-at="2026-09-26T19:08:19 UTC" name="testMultipleWindows" description="9. Проверка открытия нового окна" finished-at="2026-09-26T19:08:20 UTC" duration-ms="1377" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMultipleWindows -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TheInternetHerokuTest@79ad8b2f]" started-at="2026-09-26T19:08:20 UTC" name="tearDown" finished-at="2026-09-26T19:08:20 UTC" duration-ms="74" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- TheInternetHerokuTest -->
+    </test> <!-- All 9 Functionalities -->
+  </suite> <!-- HerokuApp Full Test Suite -->
+</testng-results>

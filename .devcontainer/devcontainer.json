@@ -1,0 +1,4 @@
+{
+  "name": "Java Selenium Codespace",
+  "postCreateCommand": "npx -y playwright install --with-deps chromium"
+}
