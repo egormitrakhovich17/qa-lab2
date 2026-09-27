@@ -11,7 +11,8 @@ import java.util.List;
 
 public class ShareLaneTest extends BaseTest {
 
-    private final String SHARELANE_URL = "https://www.sharelane.com/cgi-bin/main.py";
+    // Работаем через http, так как на sharelane нет рабочего SSL
+    private final String SHARELANE_URL = "http://www.sharelane.com/cgi-bin/main.py";
 
     // ==========================================
     // БЛОК 1: ТЕСТИРОВАНИЕ ВАЛИДАЦИИ ZIP-КОДА (DDT + Граничные значения)
@@ -19,13 +20,12 @@ public class ShareLaneTest extends BaseTest {
 
     @Test(description = "TC-01 [Позитивный]: Ввод корректного 5-значного ZIP-кода")
     public void testValidZipCode() {
-        driver.get("https://www.sharelane.com/cgi-bin/register.py");
+        driver.get("http://www.sharelane.com/cgi-bin/register.py");
         WebElement zipField = wait.until(ExpectedConditions.visibilityOfElementLocated(By.name("zip_code")));
         zipField.clear();
         zipField.sendKeys("12345");
         driver.findElement(By.cssSelector("input[value='Continue']")).click();
 
-        // Проверяем, что нет ошибки длины ZIP-кода
         List<WebElement> errors = driver.findElements(By.cssSelector(".error_message"));
         boolean hasZipLengthError = errors.stream()
                 .anyMatch(e -> e.getText().contains("ZIP code should have 5 digits"));
@@ -46,7 +46,7 @@ public class ShareLaneTest extends BaseTest {
 
     @Test(dataProvider = "invalidZipData", description = "TC-02..05 [Негативные DDT]: Проверка невалидных форматов ZIP-кода")
     public void testInvalidZipCodesDDT(String zip, String testName) {
-        driver.get("https://www.sharelane.com/cgi-bin/register.py");
+        driver.get("http://www.sharelane.com/cgi-bin/register.py");
         WebElement zipField = wait.until(ExpectedConditions.visibilityOfElementLocated(By.name("zip_code")));
         zipField.clear();
         zipField.sendKeys(zip);
@@ -134,7 +134,7 @@ public class ShareLaneTest extends BaseTest {
 
     @Test(description = "TC-10 [Позитивный]: Добавление товара в корзину и проверка отображения корзины")
     public void testAddToCart() {
-        driver.get("https://www.sharelane.com/cgi-bin/add_to_cart.py?book_id=1");
+        driver.get("http://www.sharelane.com/cgi-bin/add_to_cart.py?book_id=1");
 
         WebElement pageBody = wait.until(ExpectedConditions.visibilityOfElementLocated(By.tagName("body")));
         String bodyText = pageBody.getText();
