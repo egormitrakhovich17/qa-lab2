@@ -5,8 +5,8 @@
     <classes>
       <class name="tests.ShareLaneTest">
         <methods>
-          <include name="testAddToCart"/>
           <include name="testValidZipCode"/>
+          <include name="testAddToCart"/>
           <include name="testInvalidZipCodesDDT" invocation-numbers="0 1 2 3"/>
           <include name="testSearchNonExistentBook"/>
           <include name="testLoginEmptyCredentials"/>

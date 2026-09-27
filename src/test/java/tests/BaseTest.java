@@ -13,6 +13,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.time.Duration;
+import java.util.Collections;
 import java.util.Optional;
 
 public class BaseTest {
@@ -22,8 +23,6 @@ public class BaseTest {
 
     @BeforeMethod
     public void setUp() {
-        WebDriverManager.chromedriver().setup();
-
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--headless=new");
         options.addArguments("--no-sandbox");
@@ -32,13 +31,28 @@ public class BaseTest {
         options.addArguments("--disable-notifications");
         options.addArguments("--ignore-certificate-errors");
         options.addArguments("--allow-running-insecure-content");
+        // Маскировка под обычный десктопный браузер для учебных CGI-сайтов:
+        options.addArguments("--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36");
+        options.setExperimentalOption("excludeSwitches", Collections.singletonList("enable-automation"));
+        options.setExperimentalOption("useAutomationExtension", false);
         options.setAcceptInsecureCerts(true);
 
-        findChromiumBinary().ifPresent(options::setBinary);
+        Optional<String> browserPath = findWorkingChromium();
+        if (browserPath.isPresent()) {
+            options.setBinary(browserPath.get());
+            if (browserPath.get().contains("ms-playwright")) {
+                WebDriverManager.chromedriver().browserVersion("153").setup();
+            } else {
+                WebDriverManager.chromedriver().setup();
+            }
+        } else {
+            WebDriverManager.chromedriver().setup();
+        }
 
         driver = new ChromeDriver(options);
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-        wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        // Таймаут поиска элементов сокращен до 3 секунд для мгновенного перехвата бизнес-ошибок
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
+        wait = new WebDriverWait(driver, Duration.ofSeconds(3));
     }
 
     @AfterMethod
@@ -48,23 +62,26 @@ public class BaseTest {
         }
     }
 
-    private Optional<String> findChromiumBinary() {
-        String[] systemPaths = {"/usr/bin/google-chrome", "/usr/bin/chromium", "/usr/bin/chromium-browser"};
-        for (String p : systemPaths) {
-            if (new File(p).exists()) {
-                return Optional.of(p);
-            }
-        }
-
+    private Optional<String> findWorkingChromium() {
         try {
             Path cacheDir = Paths.get(System.getProperty("user.home"), ".cache", "ms-playwright");
             if (Files.exists(cacheDir)) {
-                return Files.walk(cacheDir)
+                Optional<String> playwrightChrome = Files.walk(cacheDir)
                         .filter(p -> p.getFileName().toString().equals("chrome") && Files.isExecutable(p))
                         .map(Path::toString)
                         .findFirst();
+                if (playwrightChrome.isPresent()) {
+                    return playwrightChrome;
+                }
             }
         } catch (Exception ignored) {
+        }
+
+        String[] realBinaries = {"/usr/bin/google-chrome", "/opt/google/chrome/chrome"};
+        for (String p : realBinaries) {
+            if (new File(p).exists()) {
+                return Optional.of(p);
+            }
         }
 
         return Optional.empty();
