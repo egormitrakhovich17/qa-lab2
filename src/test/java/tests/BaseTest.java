@@ -18,6 +18,7 @@ import java.util.Optional;
 public class BaseTest {
     protected WebDriver driver;
     protected WebDriverWait wait;
+    protected final String BASE_URL = "https://the-internet.herokuapp.com";
 
     @BeforeMethod
     public void setUp() {
@@ -29,7 +30,6 @@ public class BaseTest {
         options.addArguments("--disable-dev-shm-usage");
         options.addArguments("--window-size=1920,1080");
         options.addArguments("--disable-notifications");
-        // Игнорируем проблемы с SSL старых учебных сайтов:
         options.addArguments("--ignore-certificate-errors");
         options.addArguments("--allow-running-insecure-content");
         options.setAcceptInsecureCerts(true);
